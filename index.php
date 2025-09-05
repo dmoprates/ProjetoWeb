@@ -13,6 +13,9 @@
     <meta name="keywords" content="Projeto Web, CMS, PHP, HTML">
     <meta name="author" content="Diego Prates">
 
+    <!--favicon-->
+    <link rel="shortcut icon" href="<?php echo INCLUDE_PATH; ?>favicon.ico" type="image/x-icon">
+
     <!--Fonte Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +34,8 @@
 </head>
 
 <body>
+
+    <base base="<?php echo INCLUDE_PATH;?>" />
 
     <?php
         $url = isset($_GET['url']) ? $_GET['url'] : 'home';
@@ -56,7 +61,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav><!--desktop-->
 
@@ -66,7 +71,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime="'contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav><!--mobile-->
             <div class="clear"></div>
@@ -74,6 +79,7 @@
 
     </header>
 
+    <div class="container-principal">
     <?php
         if(file_exists('pages/'.$url.'.php')){
             include('pages/'.$url.'.php');
@@ -87,6 +93,7 @@
             }
         }
     ?>
+    </div><!--container-principal-->
 
     <footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
 
@@ -97,12 +104,14 @@
     </footer>
 
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/constants.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
+    
 
     <?php if($url == 'home' || $url == '') { ?>
     <script src="<?php echo INCLUDE_PATH; ?>js/slider.js"></script>
     <?php } ?>
-    
+
     <?php if($url == 'contato') { ?>
     <script src="<?php echo INCLUDE_PATH; ?>js/mail.js"></script>
     <?php } ?>
