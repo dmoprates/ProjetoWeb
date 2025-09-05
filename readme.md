@@ -11,6 +11,7 @@ As adequações farão com que o sistema não seja uma cópia crua do apresentad
 * Desenvolvimento do CSS do sistema; (concluído 05/09/2025)
 * Funcionalidade de botão do menu quando o responsivo é acionado com jQuery; (concluído 05/09/2025)
 * Funcionalidade de scroll dinâmico no portal; (concluído 05/09/2025)
+* Funcionalidade de Slider com controle; (concluído 05/09/2025)
 
 ## Tecnologias utilizadas:
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)

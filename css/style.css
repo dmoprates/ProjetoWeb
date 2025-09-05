@@ -121,6 +121,28 @@ nav.desktop li a:hover {
     background-position: center;
 }
 
+.bullets {
+    position: absolute;
+    z-index: 4;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}   
+
+.bullets span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--cor14);
+    margin: 0 5px;
+}
+
+.bullets span.active-slider {
+    background: var(--cor03);
+}
+
 .overlay {
     position: absolute;
     left: 0;

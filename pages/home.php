@@ -10,7 +10,9 @@
                 <input type="email" name="email" required>
                 <input type="submit" value="Cadastrar!">
             </form>
+            <div class="bullets">
 
+            </div><!--bullets-->
         </div><!--container-->
 
     </section><!--banner-container-->
