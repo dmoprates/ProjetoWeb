@@ -96,6 +96,10 @@ nav.desktop li a {
     text-decoration: none;
 }
 
+nav.desktop li a:hover {
+    text-decoration: underline;
+}
+
 .banner-principal {
     width: 100%;
     height: 600px;
@@ -326,5 +330,9 @@ footer p {
         text-decoration: none;
         color: var(--cor06);
         display: block;
+    }
+
+    nav.mobile a:hover {
+        text-decoration: underline;
     }
 }
