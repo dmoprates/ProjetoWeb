@@ -1,3 +1,5 @@
+<?php include('config.php'); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,7 +24,7 @@
     <script src="https://kit.fontawesome.com/ad7ef30e1e.js" crossorigin="anonymous"></script>
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>css/style.css">
 
     <title>ProjetoWeb</title>
 
@@ -37,20 +39,20 @@
 
             <nav class="desktop right">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav><!--desktop-->
 
             <nav class="mobile right">
                 <div class="botao-menu-mobile"><i class="fa-solid fa-bars"></i></div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav><!--mobile-->
             <div class="clear"></div>
@@ -92,7 +94,7 @@
             </div><!--w50-->
 
             <div class="w50 right">
-                <img src="images/foto.jpg" alt="Fotografia do autor do site.">
+                <img src="<?php echo INCLUDE_PATH; ?>images/foto.jpg" alt="Fotografia do autor do site.">
             </div><!--w50-->
             <div class="clear"></div>
         </div><!--container-->
@@ -198,8 +200,8 @@
 
     </footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 
 </body>
 

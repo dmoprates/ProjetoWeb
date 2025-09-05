@@ -11,7 +11,6 @@ $(
             else
                 listaMenu.fadeOut();
             */
-           listaMenu.slideToggle();
            //Abrir ou fechar menu sem efeito
            /*
            if(listaMenu.is(':hidden') == true)
@@ -19,6 +18,17 @@ $(
            else
                 listaMenu.css('display', 'none');
             */
+           //Abrir ou fechar menu com efeito e substituindo o icone do menu
+           if(listaMenu.is(':hidden') == true){
+                var icone = $('.botao-menu-mobile').find('i');
+                icone.removeClass('fa-bars');
+                icone.addClass('fa-xmark');
+                listaMenu.slideToggle();
+           }else{var icone = $('.botao-menu-mobile').find('i');
+                icone.removeClass('fa-xmark');
+                icone.addClass('fa-bars');
+                listaMenu.slideToggle();
+           }
         })
     }
 )
