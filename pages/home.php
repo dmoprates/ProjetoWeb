@@ -4,7 +4,6 @@
     <div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/bg-03.jpg');" class="banner-single"></div><!--baner-single-->
         <div class="overlay"></div>
         <div class="container">
-
             <form>
                 <h2>Qual o seu melhor e-mail?</h2>
                 <input type="email" name="email" required>

@@ -12,6 +12,10 @@ As adequações farão com que o sistema não seja uma cópia crua do apresentad
 * Funcionalidade de botão do menu quando o responsivo é acionado com jQuery; (concluído 05/09/2025)
 * Funcionalidade de scroll dinâmico no portal; (concluído 05/09/2025)
 * Funcionalidade de Slider com controle; (concluído 05/09/2025)
+----- Finalizado o Front-End do portal nesse momento próximos commits serão referentes ao Painel de Controle -----
+
+### To-Do
+- Configurar funcionalidade de envio de e-mail via PHP Mailer
 
 ## Tecnologias utilizadas:
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
