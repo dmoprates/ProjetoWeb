@@ -68,6 +68,10 @@ header .logo {
     font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+header .logo a {
+    text-decoration: none;
     color: var(--cor03);
 }
 
@@ -301,14 +305,14 @@ footer p {
         display: block;
     }
 
-    .botao-menu-moile {
+    .botao-menu-mobile {
         font-size: 24px;
         cursor: pointer;
         color: var(--cor03);
     }
 
     nav.mobile ul {
-        display: block;
+        display: none;
         position: absolute;
         left: 0;
         top: 50px;

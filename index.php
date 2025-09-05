@@ -33,7 +33,7 @@
     <header>
         <div class="container">
 
-            <div class="logo left">ation<span>dev</span></div>
+            <div class="logo left"><a href="/">ation<span>dev</span></a></div>
 
             <nav class="desktop right">
                 <ul>
@@ -199,6 +199,7 @@
     </footer>
 
     <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 

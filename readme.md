@@ -10,6 +10,8 @@ As adequações farão com que o sistema não seja uma cópia crua do apresentad
 * Desenvolvimento do HTML do sistema; (concluído 04/09/2025)
 * Desenvolvimento do CSS do sistema; (concluído 05/09/2025)
 
+
 ## Tecnologias utilizadas:
-![HTML](https://img.shields.io/badge/HTML-000?style=for-the-badge&logo=html5&logoColor=30A3DC)
-![CSS3](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=E94D5F)
+[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
+[![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
