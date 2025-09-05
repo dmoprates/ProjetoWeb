@@ -10,9 +10,11 @@ As adequações farão com que o sistema não seja uma cópia crua do apresentad
 * Desenvolvimento do HTML do sistema; (concluído 04/09/2025)
 * Desenvolvimento do CSS do sistema; (concluído 05/09/2025)
 * Funcionalidade de botão do menu quando o responsivo é acionado com jQuery; (concluído 05/09/2025)
+* Funcionalidade de scroll dinâmico no portal; (concluído 05/09/2025)
 
 ## Tecnologias utilizadas:
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
 [![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
 [![jQuery](https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=fff)](#)
+[![PHP](https://img.shields.io/badge/php-%23777BB4.svg?&logo=php&logoColor=white)](#)

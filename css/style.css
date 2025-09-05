@@ -159,6 +159,7 @@ section.banner-principal form input[type=submit] {
     margin-top: 10px;
     border: 0;
     font-size: 15px;
+    cursor: pointer;
 }
 
 section.descricao-autor {
@@ -268,6 +269,89 @@ footer p {
     text-align: center;
     font-weight: 300;
     font-size: 14px;
+}
+
+/*PÁGINA DE ERRO*/
+.wrapper-404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    max-width: 1280px;
+    padding: 0 2%;
+}
+
+section.page-404 h2 {
+    text-align: center;
+    color: var(--cor06);
+    font-weight: 300;
+    font-size: 20px;
+    border-top: 2px solid var(--cor06);
+    padding-top: 10px;
+}
+
+section.page-404 h2 i {
+    color: var(--cor04);
+}
+
+section.page-404 p {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--cor06);
+    font-weight: 300;
+}
+
+section.page-404 p a {
+    color: var(--cor13);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+footer.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*PÁGINA DE CONTATO*/
+.contato-container {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contato-container input[type=text] {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    padding-left: 8px;
+    font-size: 15px;
+    color: var(--cor06);
+    margin: 8px 0;
+}
+
+.contato-container textarea{
+    width: 100%;
+    max-width: 500px;
+    height: 120px;
+    padding: 8px;
+    font-size: 15px;
+    color: var(--cor06);
+    margin: 8px 0;
+    resize: vertical;
+}
+
+.contato-container input[type=submit] {
+    background: var(--cor07);
+    width: 140px;
+    height: 40px;
+    border: 0;
+    color: var(--cor03);
+    font-weight: 700;
+    cursor: pointer;
+
 }
 
 /*RESPONSIVO*/
