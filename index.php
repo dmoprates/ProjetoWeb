@@ -11,8 +11,18 @@
     <meta name="keywords" content="Projeto Web, CMS, PHP, HTML">
     <meta name="author" content="Diego Prates">
 
+    <!--Fonte Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/ad7ef30e1e.js" crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>ProjetoWeb</title>
 
@@ -23,9 +33,9 @@
     <header>
         <div class="container">
 
-            <div class="logo">Logomarca</div>
+            <div class="logo left">ation<span>dev</span></div>
 
-            <nav class="desktop">
+            <nav class="desktop right">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Sobre</a></li>
@@ -34,7 +44,8 @@
                 </ul>
             </nav><!--desktop-->
 
-            <nav class="mobile">
+            <nav class="mobile right">
+                <div class="botao-menu-mobile"><i class="fa-solid fa-bars"></i></div>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Sobre</a></li>
@@ -42,13 +53,13 @@
                     <li><a href="">Contato</a></li>
                 </ul>
             </nav><!--mobile-->
-
+            <div class="clear"></div>
         </div><!--container-->
 
     </header>
 
     <section class="banner-principal">
-
+        <div class="overlay"></div>
         <div class="container">
 
             <form>
@@ -65,7 +76,7 @@
 
         <div class="container">
 
-            <div class="w50">
+            <div class="w50 left">
                 <h2>Lorem Ipsum</h2>
                 <p>
                     Tempor consectetur adipisicing exercitation eu aliqua qui incididunt et ex mollit magna sint. Sint
@@ -80,10 +91,10 @@
                 </p>
             </div><!--w50-->
 
-            <div class="w50">
+            <div class="w50 right">
                 <img src="images/foto.jpg" alt="Fotografia do autor do site.">
             </div><!--w50-->
-
+            <div class="clear"></div>
         </div><!--container-->
 
     </section><!--descricao-autor-->
@@ -94,30 +105,30 @@
 
             <h2 class="title">Especialidades</h2>
 
-            <div class="box-especialidades">
-                <h3>Icone 01</h3>
-                <h3>CSS</h3>
+            <div class="w33 left box-especialidade">
+                <h3><i class="fa-brands fa-css3"></i></h3>
+                <h4>CSS</h4>
                 <p>Labore consectetur ipsum incididunt excepteur irure reprehenderit. Ipsum laboris magna do laboris
                     elit Lorem. Non consectetur enim ex mollit nulla in ea adipisicing reprehenderit eu id do minim
                     velit.</p>
             </div><!--box-especialidades-->
 
-            <div class="box-especialidades">
-                <h3>Icone 02</h3>
-                <h3>HTML2</h3>
+            <div class="w33 left box-especialidade">
+                <h3><i class="fa-brands fa-html5"></i></h3>
+                <h4>HTML2</h4>
                 <p>Labore consectetur ipsum incididunt excepteur irure reprehenderit. Ipsum laboris magna do laboris
                     elit Lorem. Non consectetur enim ex mollit nulla in ea adipisicing reprehenderit eu id do minim
                     velit.</p>
             </div><!--box-especialidades-->
 
-            <div class="box-especialidades">
-                <h3>Icone 03</h3>
-                <h3>JavaScript</h3>
+            <div class="w33 left box-especialidade">
+                <h3><i class="fa-brands fa-js"></i></h3>
+                <h4>JavaScript</h4>
                 <p>Labore consectetur ipsum incididunt excepteur irure reprehenderit. Ipsum laboris magna do laboris
                     elit Lorem. Non consectetur enim ex mollit nulla in ea adipisicing reprehenderit eu id do minim
                     velit.</p>
             </div><!--box-especialidades-->
-
+            <div class="clear"></div>
         </div><!--container-->
 
     </section><!--especialidades-->
@@ -126,7 +137,7 @@
 
         <div class="container">
 
-            <div class="w50">
+            <div class="w50 left depoimentos-container">
 
                 <h2 class="title">Depoimentos dos nossos clientes</h2>
 
@@ -159,7 +170,7 @@
 
             </div><!--w50-->
 
-            <div class="w50">
+            <div class="w50 left sevicos-container">
                 <h2 class="title">Serviços</h2>
 
                 <div class="servicos">
@@ -174,7 +185,7 @@
                 </div><!--servicos-->
 
             </div><!--w50-->
-
+            <div class="clear"></div>
         </div><!--container-->
 
     </section><!--extras-->
