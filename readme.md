@@ -13,7 +13,8 @@ As adequações farão com que o sistema não seja uma cópia crua do apresentad
 * Funcionalidade de scroll dinâmico no portal; (concluído 05/09/2025)
 * Funcionalidade de Slider com controle; (concluído 05/09/2025)
 ----- Finalizado o Front-End do portal nesse momento próximos commits serão referentes ao Painel de Controle -----
-* Front-End da página de login;
+* Front-End da página de login; (concluído 08/09/2025)
+* Funcionalidade de Login/Logout;
 
 ### To-Do
 - Configurar funcionalidade de envio de e-mail via PHP Mailer

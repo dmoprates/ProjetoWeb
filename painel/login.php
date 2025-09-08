@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +20,38 @@
 
     <title>Painel de Controle</title>
 </head>
+
 <body>
     <div class="box-login">
+        <?php
+        if (isset($_POST['acao'])) {
+            $user = $_POST['user'];
+            $password = $_POST['password'];
+            $sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE user = ? AND password = ?");
+            $sql->execute(array($user, $password));
+            if ($sql->rowCount() == 1) {
+                //Logamos com sucesso
+                $_SESSION['login'] = true;
+                $_SESSION['user'] = $user;
+                $_SESSION['password'] = $password;
+
+                header('Location: ' . INCLUDE_PATH_PAINEL);
+
+                die();
+
+            } else {
+                //falhou
+                echo '<div class="erro-box"><i class="fa-solid fa-circle-exclamation"></i> Usuário ou senha incorretos!</div>';
+            }
+        }
+        ?>
         <h2>Efetue o Login</h2>
         <form method="post">
             <input type="text" name="user" placeholder="Usuário" required>
             <input type="password" name="password" placeholder="Senha" required>
-            <input type="submit" value="Acessar">
+            <input type="submit" name="acao" value="Acessar">
         </form>
     </div><!--box-login-->
 </body>
+
 </html>

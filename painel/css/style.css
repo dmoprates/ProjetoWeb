@@ -24,13 +24,25 @@
     font-family: "Inter", sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     background: var(--cor12);
 }
 
+/* === BOX ERRO DO PAINEL === */
+.erro-box {
+    width: 100%;
+    padding: 8px 2%;
+    text-align: center;
+    background: var(--cor04);
+    color: white;
+    font-size: 14px;
+}
+
+
 /* === TELA DE LOGIN === */
-.box-login{
+.box-login {
     max-width: 600px;
     width: 95%;
     padding: 60px 2%;
@@ -69,3 +81,41 @@ html, body {
     margin: 8px 0;
 }
 
+/* === PAINEL DE CONTROLE === */
+.clear {
+    clear: both;
+}
+
+.center {
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+div.menu{
+    overflow-y: auto;
+    height: 100%;
+    background: var(--cor01);
+    float: left;
+    width: 300px;
+}
+
+header {
+    background: var(--cor14);
+    padding: 10px 0;
+    width: calc(100% - 300px);
+    float: left;
+}
+
+.logout {
+    float: right;
+}
+
+.logout a {
+    color: var(--cor03);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.logout a:hover {
+    color: var(--cor12);
+}
