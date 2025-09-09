@@ -25,4 +25,18 @@ define('USER', 'xxxxx');
 define('PASSWORD', 'xxxxx');
 define('DATABASE', 'xxxxx');
 */
+
+//CONSTANTES PARA PAINEL DE CONTROLE
+$nomeEmpresa = 'AtionDev';
+
+//FUNÇÕES
+function pegaCargo($cargo){
+    $arr = [
+        '0' => 'Normal',
+        '1' => 'Sub-Administrador',
+        '2' => 'Administrador'
+    ];
+    return $arr[$cargo];
+}
+
 ?>

@@ -1,7 +1,7 @@
 <?php
-	if(isset($_GET['logout'])){
-		Painel::logout();
-	}
+if (isset($_GET['logout'])) {
+    Painel::logout();
+}
 ?>
 
 
@@ -30,20 +30,99 @@
 
 <body>
 
-    <div class="menu">
-        
-    </div>
+    <div class="menu-wraper">
+        <div class="menu">
+            <div class="box-usuario">
+                <?php if ($_SESSION['img'] == '') { ?>
+                    <div class="avatar-usuario">
+                        <i class="fa-solid fa-user"></i>
+                    </div><!--avatar-usuario-->
+                <?php } else { ?>
+                    <div class="imagem-usuario">
+                        <img src="<?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $_SESSION['img']; ?>"
+                            alt="Imagem do usuário logado">
+                    </div><!--avatar-usuario-->
+                <?php } ?>
+                <div class="nome-usuario">
+                    <p><?php echo $_SESSION['nome']; ?></p>
+                    <p class="cargo"><?php echo pegaCargo($_SESSION['cargo']); ?></p>
+                </div><!--nome-usuario-->
+                <div class="clear"></div>
+            </div><!--box-usuario-->
+            <div class="itens-menu">
+
+                <h2>Administração do Painel</h2>
+                <a href="">Editar Usuário</a>
+                <a href="">Adicionar Usuários</a>
+
+                <h2>Cadastro</h2>
+                <a href="">Cadastrar Depoimento</a>
+                <a href="">Cadastrar Serviço</a>
+                <a href="">Cadastrar Slides</a>
+
+                <h2>Gestão</h2>
+                <a href="">Listar Depoimentos</a>
+                <a href="">Listar Serviços</a>
+                <a href="">Listar Slides</a>
+
+                <h2>Configuração Geral</h2>
+                <a href="">Editar Site</a>
+
+            </div><!--itens-menu-->
+        </div><!--menu-->
+    </div><!--menu-wraper-->
 
     <header>
         <div class="center">
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div><!--menu-btn-->
             <div class="logout">
-                <a href="<?php echo INCLUDE_PATH_PAINEL?>?logout"><i class="fa-solid fa-right-from-bracket"></i>
+
+                <a href="<?php echo INCLUDE_PATH_PAINEL ?>?logout"><i class="fa-solid fa-right-from-bracket"></i>
                     Sair</a>
             </div><!--logout-->
             <div class="clear"></div>
         </div><!--center-->
+        <div class="clear"></div>
     </header>
-    <div class="clear"></div>
+
+    <div class="content">
+        <div class="box-content left w100">
+            <h2 class="title"><i class="fa-solid fa-house-user"></i> Painel de Controle - <?php echo $nomeEmpresa ?></h2>
+
+            <div class="box-metricas">
+
+                <div class="box-metricas-single">
+                    <div class="box-metricas-wraper">
+                        <h2>Usuários Online</h2>
+                        <p>10</p>
+                    </div><!--box-metricas-wraper-->
+                </div><!--box-metricas-single-->
+
+                <div class="box-metricas-single">
+                    <div class="box-metricas-wraper">
+                        <h2>Total de Visitas</h2>
+                        <p>10</p>
+                    </div><!--box-metricas-wraper-->
+                </div><!--box-metricas-single-->
+
+                <div class="box-metricas-single">
+                    <div class="box-metricas-wraper">
+                        <h2>Visitas Hoje</h2>
+                        <p>10</p>
+                    </div><!--box-metricas-wraper-->
+                </div><!--box-metricas-single-->
+
+                <div class="clear"></div>
+            </div><!--box-metricas-->
+        </div><!--div.box-content-->
+
+        <div class="clear"></div>
+    </div><!--content-->
+
+    <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
+    <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/main.js"></script>
 
 </body>
 
