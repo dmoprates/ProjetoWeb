@@ -14,6 +14,7 @@
     --cor12: #DFDFDF;
     --cor13: #979797;
     --cor14: #414549;
+    --cor15: #b2d3d1;
 }
 
 /*Reset Geral*/
@@ -97,7 +98,7 @@ body {
 }
 
 /* == MENU == */
-.mnu-wraper {
+.menu-wraper {
     width: 300px;
 }
 
@@ -127,6 +128,7 @@ header {
 }
 
 .logout a {
+    padding: 0 10px;
     color: var(--cor03);
     font-size: 14px;
     text-decoration: none;
@@ -266,7 +268,7 @@ div.box-usuario {
 .box-content {
     background: var(--cor08);
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .box-content h2.title {
@@ -287,6 +289,7 @@ div.box-usuario {
     width: 33.3%;
     background: var(--cor05);
     border: 5px solid var(--cor03);
+
 }
 
 .box-metricas-single:nth-of-type(2) {
@@ -312,6 +315,29 @@ div.box-usuario {
     padding: 10px 0;
     font-size: 20px;
     font-weight: 600;
+}
+
+/* == TABELA RESPONSIVA == */
+.table-responsive {
+    max-width: 1280px;
+    margin: 20px auto;
+}
+
+.table-responsive .row:nth-of-type(1) {
+    background: var(--cor15);
+    color: var(--cor14);
+    font-weight: bold;
+}
+
+.table-responsive .row {
+    color: var(--cor13);
+    border-bottom: 1px solid var(--cor12);
+    padding: 8px 5px;
+}
+
+.col {
+    float: left;
+    width: 50%;
 }
 
 @media screen and (max-width: 1024px){

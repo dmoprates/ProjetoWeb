@@ -2,6 +2,8 @@
 
 session_start();
 
+date_default_timezone_set('America/Sao_Paulo');
+
 $autoload = function ($class) {
     if($class== 'Email'){
         include('classes/PHPMailer/autoload.php');
@@ -27,7 +29,7 @@ define('DATABASE', 'xxxxx');
 */
 
 //CONSTANTES PARA PAINEL DE CONTROLE
-$nomeEmpresa = 'AtionDev';
+define('NOME_EMPRESA', 'AtionDev');
 
 //FUNÇÕES
 function pegaCargo($cargo){

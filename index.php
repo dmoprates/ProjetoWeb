@@ -1,4 +1,6 @@
 <?php include('config.php'); ?>
+<?php Site::updateUsuariosOnline();?>
+<?php Site::contador(); ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
