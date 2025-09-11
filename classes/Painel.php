@@ -43,11 +43,9 @@
             } else if ($tipo == 'erro') {
                 echo '<div class="box-alert erro"><i class="fa-solid fa-xmark"></i> '.$mensagem.'</div>';
             }
-
         }
         public static function imagemValida($imagem) {
             if($imagem['type'] == 'image/jpeg' || $imagem['type'] == 'image/jpg' || $imagem['type'] == 'image/png'){
-
                 $tamanho = intval($imagem['size'] / 1024);
                 if($tamanho < 900)
                     return true;
@@ -67,6 +65,29 @@
         }
         public static function deleteFile($file){
             @unlink('uploads/'.$file);
+        }
+        public static function insert($arr){
+            $certo = true;
+            $nome_tabela = $arr['nome_tabela'];
+            $query = "INSERT INTO `$nome_tabela` VALUES (null";
+            foreach($arr as $key => $value) {
+                $nome = $key;
+                $valor = $value;
+                if($nome == 'acao' || $nome == 'nome_tabela')
+                    continue;
+                if($value == '') {
+                    $certo = false;
+                    break;
+                }
+                $query.=", ?";
+                $parametros[] = $value;
+            }
+            $query.=")";
+            if($certo == true) {
+                $sql = MySql::conectar()->prepare($query);
+                $sql->execute($parametros);
+            }
+            return $certo;
         }
     }
 
