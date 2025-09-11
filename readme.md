@@ -4,7 +4,7 @@ Este projeto busca implementar o aprendizado adquirido no curso de Desenvolvimen
 
 O sistema foi inspirado no design da plataforma, com adequações e customizações realizadas por mim para atendimento da minha demanda pessoal.
 
-As adequações farão com que o sistema não seja uma cópia crua do apresentado no curso, porém os créditos para as funcionalidades vão para a Danki Code.
+As adequações farão com que o sistema não seja uma cópia do apresentado no curso, porém os créditos para as funcionalidades vão para a Danki Code.
 
 ## Cronograma da aplicação:
 * Desenvolvimento do HTML do sistema; (concluído 04/09/2025)
@@ -15,6 +15,9 @@ As adequações farão com que o sistema não seja uma cópia crua do apresentad
 ----- Finalizado o Front-End do portal nesse momento próximos commits serão referentes ao Painel de Controle -----
 * Front-End da página de login; (concluído 08/09/2025)
 * Funcionalidade de Login/Logout; (concluído 08/09/2025)
+* Funcionalidade de gerenciar métricas de acesso e usuários online no portal; (concluído 10/09/2025)
+* Funcionalidade de edição de usuário; (concluído 10/09/2025)
+* Funcionalidade de adição de usuário no painel com sistema de permissão; (concluído 11/09/2025)
 
 ### To-Do
 - Configurar funcionalidade de envio de e-mail via PHP Mailer

@@ -52,18 +52,27 @@ if (isset($_GET['logout'])) {
             <div class="itens-menu">
 
                 <h2>Administração do Painel</h2>
-                <a href="">Editar Usuário</a>
-                <a href="">Adicionar Usuários</a>
+                <a <?php selecionadoMenu('editar-usuario'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
+                <a <?php selecionadoMenu('adicionar-usuario'); ?> 
+                    <?php verificaPermissaoMenu(2); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuário</a>
 
                 <h2>Cadastro</h2>
-                <a href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar Depoimento</a>
-                <a href="">Cadastrar Serviço</a>
-                <a href="">Cadastrar Slides</a>
+                <a <?php selecionadoMenu('cadastrar-depoimento'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar Depoimento</a>
+                <a <?php selecionadoMenu('cadastrar-servico'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-servico">Cadastrar Serviço</a>
+                <a <?php selecionadoMenu('cadastrar-slides'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-slides">Cadastrar Slides</a>
 
                 <h2>Gestão</h2>
-                <a href="">Listar Depoimentos</a>
-                <a href="">Listar Serviços</a>
-                <a href="">Listar Slides</a>
+                <a <?php selecionadoMenu('listar-depoimentos'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>listar-depoimentos">Listar Depoimentos</a>
+                <a <?php selecionadoMenu('listar-servicos'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>listar-servicos">Listar Serviços</a>
+                <a <?php selecionadoMenu('listar-slides'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>listar-slides">Listar Slides</a>
 
                 <h2>Configuração Geral</h2>
                 <a href="">Editar Site</a>
@@ -80,7 +89,7 @@ if (isset($_GET['logout'])) {
             <div class="logout">
                 <a href="<?php echo INCLUDE_PATH_PAINEL ?>"><i class="fa-solid fa-house"></i>
                     Página Inicial</a>
-                    
+
                 <a href="<?php echo INCLUDE_PATH_PAINEL ?>?logout"><i class="fa-solid fa-right-from-bracket"></i>
                     Sair</a>
             </div><!--logout-->

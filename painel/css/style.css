@@ -15,6 +15,7 @@
     --cor13: #979797;
     --cor14: #414549;
     --cor15: #b2d3d1;
+    --cor16: #6b717a;
 }
 
 /*Reset Geral*/
@@ -86,6 +87,17 @@ body {
     margin: 8px 0;
 }
 
+.form-group-login label {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--cor06);
+    padding-right: 6px;
+}
+
+form .form-group-login:nth-of-type(2) {
+    position: relative;
+    top: 12px;
+}
 /* === PAINEL DE CONTROLE === */
 /* == GERAL == */
 .clear {
@@ -241,6 +253,10 @@ div.box-usuario {
     border-bottom: 1px solid var(--cor14);
 }
 
+.menu-active {
+    background: var(--cor16);
+}
+
 /* == CONTEÚDO PRINCIPAL DO PAINEL == */
 .w100 {
     width: 100%;
@@ -269,6 +285,7 @@ div.box-usuario {
     background: var(--cor08);
     padding: 10px;
     margin-bottom: 25px;
+    border-radius: 8px;
 }
 
 .box-content h2.title {
@@ -406,4 +423,80 @@ div.box-usuario {
 	.items-menu a{
 		font-size: 15px;
 	}
+}
+
+/* === PÁGINA EDITAR USUÁRIO === */
+.box-content .form-group {
+    margin: 15px 0;
+}
+
+.box-content form {
+    margin: 30px 0;
+}
+
+.box-content form label {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--cor06);
+    display: block;
+}
+
+.box-content form input[type=text],
+.box-content form input[type=password] {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--cor06);
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid var(--cor11);
+}
+
+.box-content form input[type=file] {
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--cor11);
+}
+
+.box-content form input[type=submit] {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    background: var(--cor07);
+    color: var(--cor03);
+    border: 0;
+}
+
+    /* = BOX DE ALERTA = */
+.box-alert {
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.sucesso {
+    color: var(--cor03);
+    background: var(--cor02);
+}
+
+.erro {
+    color: var(--cor03);
+    background: var(--cor04);
+}
+
+/* == PÁGINA ADICIONAR USUÁRIO == */
+.box-content form select {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--cor06);
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--cor11);
+    padding-left: 8px;
+    background: white;
 }
