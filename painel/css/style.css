@@ -341,8 +341,8 @@ div.box-usuario {
 }
 
 .table-responsive .row:nth-of-type(1) {
-    background: var(--cor15);
-    color: var(--cor14);
+    background: var(--cor14);
+    color: var(--cor03);
     font-weight: bold;
 }
 
@@ -362,7 +362,7 @@ div.box-usuario {
 		width: 100%;
 		min-height: 0;
 	}
-	.box-metrica-single{
+	.box-metricas-single{
 		width: 100%;
 	}
 }
@@ -405,11 +405,11 @@ div.box-usuario {
 		padding: 8px 2%;
 	}
 
-	.box-metrica-wraper h2{
+	.box-metricas-wraper h2{
 	font-size: 24px;
 	}
 
-	.box-metrica-wraper p{
+	.box-metricas-wraper p{
 	padding: 10px 0;
 	font-size: 22px;
 	}
@@ -512,4 +512,68 @@ div.box-usuario {
     padding: 8px;
     border: 1px solid var(--cor11);
     resize: vertical;
+}
+
+/* == PÁGINA LISTAR DEPOIMENTOS == */
+.wraper-table {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    min-width: 900px;
+    margin: 20px 0;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+table tr:nth-of-type(1) {
+    background: var(--cor14);
+    color: var(--cor03);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+table tr {
+    color: var(--cor14);
+    border-bottom: 1px solid var(--cor12);
+}
+
+table td {
+    padding: 6px;;
+}
+
+table a.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: var(--cor03);
+    font-size: 13px;
+}
+
+table a.btn.edit {
+    background: var(--cor07);
+}
+
+table a.btn.delete {
+    background: var(--cor09);
+}
+
+.paginacao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.paginacao a {
+    font-size: 13px;
+    margin: 0 4px;
+    display: inline-block;
+    padding: 3px 4px;
+    border: 1px solid var(--cor11);
+    text-decoration: none;
+    color: var(--cor14);
+}
+
+.paginacao a.page-selected {
+    background: var(--cor12);
 }
