@@ -238,7 +238,7 @@ div.box-usuario {
     text-align: left;
     font-weight: 400;
     font-size: 16px;
-    background: var(--cor14);
+    background: var(--cor16);
     color: var(--cor03);
     padding: 8px;
 }
@@ -254,7 +254,7 @@ div.box-usuario {
 }
 
 .menu-active {
-    background: var(--cor16);
+    background: var(--cor14);
 }
 
 /* == CONTEÚDO PRINCIPAL DO PAINEL == */

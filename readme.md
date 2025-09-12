@@ -7,17 +7,18 @@ O sistema foi inspirado no design da plataforma, com adequações e customizaç�
 As adequações farão com que o sistema não seja uma cópia do apresentado no curso, porém os créditos para as funcionalidades vão para a Danki Code.
 
 ## Cronograma da aplicação:
-* Desenvolvimento do HTML do sistema; (concluído 04/09/2025)
-* Desenvolvimento do CSS do sistema; (concluído 05/09/2025)
-* Funcionalidade de botão do menu quando o responsivo é acionado com jQuery; (concluído 05/09/2025)
-* Funcionalidade de scroll dinâmico no portal; (concluído 05/09/2025)
-* Funcionalidade de Slider com controle; (concluído 05/09/2025)
+* Desenvolvimento do HTML do sistema; (concluído: 04/09/2025)
+* Desenvolvimento do CSS do sistema; (concluído: 05/09/2025)
+* Funcionalidade de botão do menu quando o responsivo é acionado com jQuery; (concluído: 05/09/2025)
+* Funcionalidade de scroll dinâmico no portal; (concluído: 05/09/2025)
+* Funcionalidade de Slider com controle; (concluído: 05/09/2025)
 ----- Finalizado o Front-End do portal nesse momento próximos commits serão referentes ao Painel de Controle -----
-* Front-End da página de login; (concluído 08/09/2025)
-* Funcionalidade de Login/Logout; (concluído 08/09/2025)
-* Funcionalidade de gerenciar métricas de acesso e usuários online no portal; (concluído 10/09/2025)
-* Funcionalidade de edição de usuário; (concluído 10/09/2025)
-* Funcionalidade de adição de usuário no painel com sistema de permissão; (concluído 11/09/2025)
+* Front-End da página de login; (concluído: 08/09/2025)
+* Funcionalidade de Login/Logout; (concluído: 08/09/2025)
+* Funcionalidade de gerenciar métricas de acesso e usuários online no portal; (concluído: 10/09/2025)
+* Funcionalidade de edição de usuário; (concluído: 10/09/2025)
+* Funcionalidade de adição de usuário no painel com sistema de permissão; (concluído: 11/09/2025)
+* Funcionalidade de inclusão, edição e deleção de informações no painel; (concluído: )
 
 ### To-Do
 - Configurar funcionalidade de envio de e-mail via PHP Mailer

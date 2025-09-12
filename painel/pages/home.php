@@ -1,12 +1,14 @@
 <?php
-$usuariosOnLine = Painel::listarUsuariosOnline();
-$pegarVisitasTotais = MySql::conectar()->prepare("SELECT * FROM `tb_admin.visitas`");
-$pegarVisitasTotais->execute();
-$pegarVisitasTotais = $pegarVisitasTotais->rowCount();
+    $usuariosOnLine = Painel::listarUsuariosOnline();
+    $pegarVisitasTotais = MySql::conectar()->prepare("SELECT * FROM `tb_admin.visitas`");
+    $pegarVisitasTotais->execute();
 
-$pegarVisitasHoje = MySql::conectar()->prepare("SELECT * FROM `tb_admin.visitas` WHERE dia = ?");
-$pegarVisitasHoje->execute(array(date('Y-m-d')));
-$pegarVisitasHoje = $pegarVisitasHoje->rowCount();
+    $pegarVisitasTotais = $pegarVisitasTotais->rowCount();
+
+    $pegarVisitasHoje = MySql::conectar()->prepare("SELECT * FROM `tb_admin.visitas` WHERE dia = ?");
+    $pegarVisitasHoje->execute(array(date('Y-m-d')));
+
+    $pegarVisitasHoje = $pegarVisitasHoje->rowCount();
 ?>
 
 <div class="box-content left w100">

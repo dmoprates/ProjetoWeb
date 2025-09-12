@@ -42,9 +42,9 @@ $(
             $('[realtime]').click(function(){
                 var pagina = $(this).attr('realtime');
                 $('.container-principal').hide();
-                $('container-principal').load(include_path+'pages/'+pagina+'.php');
-                initialize();
-                window.history.pushState('', '',pagina);
+                $('.container-principal').load(include_path+'pages/'+pagina+'.php');
+                $('.container-princial').fadeIn(1000);
+                window.history-pushState('', '',contato);
                 return false;
             })
 
