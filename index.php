@@ -1,5 +1,5 @@
 <?php include('config.php'); ?>
-<?php Site::updateUsuariosOnline();?>
+<?php Site::updateUsuarioOnline(); ?>
 <?php Site::contador(); ?>
 
 <!DOCTYPE html>

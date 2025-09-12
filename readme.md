@@ -18,7 +18,7 @@ As adequações farão com que o sistema não seja uma cópia do apresentado no 
 * Funcionalidade de gerenciar métricas de acesso e usuários online no portal; (concluído: 10/09/2025)
 * Funcionalidade de edição de usuário; (concluído: 10/09/2025)
 * Funcionalidade de adição de usuário no painel com sistema de permissão; (concluído: 11/09/2025)
-* Funcionalidade de inclusão, edição e deleção de informações no painel; (concluído: )
+* Funcionalidade de inclusão, edição e deleção de informações no painel; (concluído: 12/09/2025)
 
 ### To-Do
 - Configurar funcionalidade de envio de e-mail via PHP Mailer

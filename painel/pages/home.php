@@ -1,5 +1,5 @@
 <?php
-    $usuariosOnLine = Painel::listarUsuariosOnline();
+    $usuariosOnline = Painel::listarUsuariosOnline();
     $pegarVisitasTotais = MySql::conectar()->prepare("SELECT * FROM `tb_admin.visitas`");
     $pegarVisitasTotais->execute();
 
@@ -19,7 +19,7 @@
         <div class="box-metricas-single">
             <div class="box-metricas-wraper">
                 <h2>Usuários Online</h2>
-                <p><?php echo count($usuariosOnLine); ?></p>
+                <p><?php echo count($usuariosOnline); ?></p>
             </div><!--box-metricas-wraper-->
         </div><!--box-metricas-single-->
 
@@ -53,7 +53,7 @@
             </div><!--col-->
             <div class="clear"></div>
         </div><!--row-->
-        <?php foreach ($usuariosOnLine as $key => $value) { ?>
+        <?php foreach ($usuariosOnline as $key => $value) { ?>
             <div class="row">
                 <div class="col">
                     <span><?php echo $value['ip']; ?></span>

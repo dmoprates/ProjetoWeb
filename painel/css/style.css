@@ -559,6 +559,10 @@ table a.btn.delete {
     background: var(--cor09);
 }
 
+table a.btn.order{
+    background: var(--cor10);
+}
+
 .paginacao {
     text-align: center;
     margin: 20px 0;
@@ -577,3 +581,4 @@ table a.btn.delete {
 .paginacao a.page-selected {
     background: var(--cor12);
 }
+
