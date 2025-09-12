@@ -1,5 +1,5 @@
 <div class="box-content">
-    <h2 class="title"> <i class="fa-solid fa-comment"></i> Adicionar Depoimentos</h2>
+    <h2 class="title"> <i class="fa-solid fa-comment"></i> Cadastrar Depoimentos</h2>
 
     <form method="post" enctype="multipart/form-data">
 

@@ -24,17 +24,9 @@
     <div id="sobre" class="container">
 
         <div class="w50 left">
-            <h2>Lorem Ipsum</h2>
+            <h2><?php echo $infoSite['nome_autor'] ?></h2>
             <p>
-                Tempor consectetur adipisicing exercitation eu aliqua qui incididunt et ex mollit magna sint. Sint
-                elit ad et laboris eiusmod dolor est aliqua. Laborum est pariatur eu ex ea nisi voluptate qui
-                consectetur eu non Lorem.
-            </p>
-            <p>
-                Elit enim sint ex amet aliquip culpa do ea enim. Id velit cupidatat excepteur eiusmod ipsum duis
-                laboris et sit consequat sint et. Ipsum officia consequat anim minim anim aute nostrud culpa tempor
-                amet excepteur. Elit non reprehenderit sint anim sunt laboris excepteur. Incididunt Lorem in
-                occaecat nisi.
+                <?php echo $infoSite['descricao'] ?>
             </p>
         </div><!--w50-->
 
@@ -53,27 +45,21 @@
         <h2 class="title">Especialidades</h2>
 
         <div class="w33 left box-especialidade">
-            <h3><i class="fa-brands fa-css3"></i></h3>
-            <h4>CSS</h4>
-            <p>Labore consectetur ipsum incididunt excepteur irure reprehenderit. Ipsum laboris magna do laboris
-                elit Lorem. Non consectetur enim ex mollit nulla in ea adipisicing reprehenderit eu id do minim
-                velit.</p>
+            <h3><i class="<?php echo $infoSite['icone1'] ?>"></i></h3>
+            <h4><?php echo $infoSite['titulo1'] ?></h4>
+            <p><?php echo $infoSite['descricao1'] ?></p>
         </div><!--box-especialidades-->
 
         <div class="w33 left box-especialidade">
-            <h3><i class="fa-brands fa-html5"></i></h3>
-            <h4>HTML2</h4>
-            <p>Labore consectetur ipsum incididunt excepteur irure reprehenderit. Ipsum laboris magna do laboris
-                elit Lorem. Non consectetur enim ex mollit nulla in ea adipisicing reprehenderit eu id do minim
-                velit.</p>
+            <h3><i class="<?php echo $infoSite['icone2'] ?>"></i></h3>
+            <h4><?php echo $infoSite['titulo2'] ?></h4>
+            <p><?php echo $infoSite['descricao2'] ?></p>
         </div><!--box-especialidades-->
 
         <div class="w33 left box-especialidade">
-            <h3><i class="fa-brands fa-js"></i></h3>
-            <h4>JavaScript</h4>
-            <p>Labore consectetur ipsum incididunt excepteur irure reprehenderit. Ipsum laboris magna do laboris
-                elit Lorem. Non consectetur enim ex mollit nulla in ea adipisicing reprehenderit eu id do minim
-                velit.</p>
+            <h3><i class="<?php echo $infoSite['icone3'] ?>"></i></h3>
+            <h4><?php echo $infoSite['titulo3'] ?></h4>
+            <p><?php echo $infoSite['descricao3'] ?></p>
         </div><!--box-especialidades-->
         <div class="clear"></div>
     </div><!--container-->

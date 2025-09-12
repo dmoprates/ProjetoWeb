@@ -9,7 +9,7 @@ $cargos = [
 ?>
 
 <div class="box-content">
-    <h2 class="title"> <i class="fa-solid fa-user-pen"></i> Editar Usuário</h2>
+    <h2 class="title"> <i class="fa-solid fa-user-pen"></i> Adicionar Usuário</h2>
 
     <form method="post" enctype="multipart/form-data">
 

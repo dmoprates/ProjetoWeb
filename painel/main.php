@@ -75,7 +75,7 @@ if (isset($_GET['logout'])) {
                     href="<?php echo INCLUDE_PATH_PAINEL ?>listar-slides">Listar Slides</a>
 
                 <h2>Configuração Geral</h2>
-                <a href="">Editar Site</a>
+                <a href="<?php echo INCLUDE_PATH_PAINEL ?>editar-site">Editar Site</a>
 
             </div><!--itens-menu-->
         </div><!--menu-->

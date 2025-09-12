@@ -2,6 +2,12 @@
 <?php Site::updateUsuarioOnline(); ?>
 <?php Site::contador(); ?>
 
+<?php 
+    $infoSite = MySql::conectar()->prepare("SELECT * FROM `tb_site.config`");
+    $infoSite->execute();
+    $infoSite = $infoSite->fetch();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -31,7 +37,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>css/style.css">
 
-    <title>ProjetoWeb</title>
+    <title><?php echo $infoSite['titulo'];?></title>
 
 </head>
 

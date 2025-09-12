@@ -1,5 +1,5 @@
 <div class="box-content">
-    <h2 class="title"> <i class="fa-solid fa-briefcase"></i> Adicionar Serviço</h2>
+    <h2 class="title"> <i class="fa-solid fa-briefcase"></i> Cadastrar Serviço</h2>
 
     <form method="post" enctype="multipart/form-data">
 
