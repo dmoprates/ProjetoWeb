@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12/09/2025 às 20:20
+-- Tempo de geração: 12/09/2025 às 21:13
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -33,13 +33,6 @@ CREATE TABLE `tb_admin.online` (
   `ultima_acao` datetime NOT NULL,
   `token` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `tb_admin.online`
---
-
-INSERT INTO `tb_admin.online` (`id`, `ip`, `ultima_acao`, `token`) VALUES
-(17, '127.0.0.1', '2025-09-12 15:14:41', '68c446a3bb747');
 
 -- --------------------------------------------------------
 

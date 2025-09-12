@@ -74,6 +74,16 @@ if (isset($_GET['logout'])) {
                 <a <?php selecionadoMenu('listar-slides'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>listar-slides">Listar Slides</a>
 
+                <h2>Notícias</h2>
+                <a <?php selecionadoMenu('cadastrar-categoria'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-categoria">Cadastrar Categoria</a>
+                <a <?php selecionadoMenu('gerenciar-categorias'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>editar-categorias">Gerenciar Categorias</a>
+                <a <?php selecionadoMenu('cadastrar-noticia'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-noticia">Cadastrar Notícia</a>
+                <a <?php selecionadoMenu('gerenciar-noticias'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-noticias">Gerenciar Notícias</a>
+
                 <h2>Configuração Geral</h2>
                 <a href="<?php echo INCLUDE_PATH_PAINEL ?>editar-site">Editar Site</a>
 
