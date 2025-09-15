@@ -70,6 +70,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>noticias">Notícias</a></li>
                     <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav><!--desktop-->
@@ -80,6 +81,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>noticias">Notícias</a></li>
                     <li><a realtime="'contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav><!--mobile-->
@@ -89,19 +91,26 @@
     </header>
 
     <div class="container-principal">
-    <?php
-        if(file_exists('pages/'.$url.'.php')){
-            include('pages/'.$url.'.php');
-        } else {
-            //Redirecionar para uma página de erro
-            if($url != 'sobre' && $url != 'servicos'){
-                $pagina404 = true;
-                include('pages/404.php');
-            } else {
-                include('pages/home.php');
-            }
-        }
-    ?>
+	<?php
+
+		if(file_exists('pages/'.$url.'.php')){
+			include('pages/'.$url.'.php');
+		}else{
+			//Podemos fazer o que quiser, pois a página não existe.
+			if($url != 'depoimentos' && $url != 'servicos'){
+				$urlPar = explode('/',$url)[0];
+				if($urlPar != 'noticias'){
+				$pagina404 = true;
+				include('pages/404.php');
+				}else{
+					include('pages/noticias.php');
+				}
+			}else{
+				include('pages/home.php');
+			}
+		}
+
+	?>
     </div><!--container-principal-->
 
     <footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>

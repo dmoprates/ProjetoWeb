@@ -19,24 +19,16 @@
 
 </section><!--banner-container-->
 
-<section class="descricao-autor">
-
-    <div id="sobre" class="container">
-
-        <div class="w50 left">
-            <h2><?php echo $infoSite['nome_autor'] ?></h2>
-            <p>
-                <?php echo $infoSite['descricao'] ?>
-            </p>
-        </div><!--w50-->
-
-        <div class="w50 right">
-            <img src="<?php echo INCLUDE_PATH; ?>images/foto.jpg" alt="Fotografia do autor do site.">
-        </div><!--w50-->
-        <div class="clear"></div>
-    </div><!--container-->
-
-</section><!--descricao-autor-->
+	<section class="descricao-autor" id="sobre">
+		<div class="center">
+		<div class="w100 left">
+			<h2 class="text-center"><img src="<?php echo INCLUDE_PATH ?>images/foto.jpg" /> <?php echo $infoSite['nome_autor']; ?></h2>
+			<p><?php echo $infoSite['descricao']; ?></p>
+		</div><!--w50-->
+	
+		<div class="clear"></div>
+		</div><!--center-->
+	</section><!--descricao-autor-->
 
 <section class="especialidades">
 
