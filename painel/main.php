@@ -25,6 +25,11 @@ if (isset($_GET['logout'])) {
     <!--CSS-->
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH_PAINEL; ?>css/style.css">
 
+    <!--TinyMCE-->
+    <script src="https://cdn.tiny.cloud/1/sp6p50q0nnkpcz2sad0koa68or56sgjjgw12jlrjqplse91d/tinymce/8/tinymce.min.js"
+        referrerpolicy="origin" crossorigin="anonymous"></script>
+
+
     <title>Painel de Controle</title>
 </head>
 
@@ -54,8 +59,7 @@ if (isset($_GET['logout'])) {
                 <h2>Administração do Painel</h2>
                 <a <?php selecionadoMenu('editar-usuario'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
-                <a <?php selecionadoMenu('adicionar-usuario'); ?> 
-                    <?php verificaPermissaoMenu(2); ?>
+                <a <?php selecionadoMenu('adicionar-usuario'); ?> <?php verificaPermissaoMenu(2); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuário</a>
 
                 <h2>Cadastro</h2>
@@ -78,7 +82,7 @@ if (isset($_GET['logout'])) {
                 <a <?php selecionadoMenu('cadastrar-categoria'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-categoria">Cadastrar Categoria</a>
                 <a <?php selecionadoMenu('gerenciar-categorias'); ?>
-                    href="<?php echo INCLUDE_PATH_PAINEL ?>editar-categorias">Gerenciar Categorias</a>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-categorias">Gerenciar Categorias</a>
                 <a <?php selecionadoMenu('cadastrar-noticia'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-noticia">Cadastrar Notícia</a>
                 <a <?php selecionadoMenu('gerenciar-noticias'); ?>
@@ -116,6 +120,14 @@ if (isset($_GET['logout'])) {
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
     <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/main.js"></script>
     <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/jquery.mask.js"></script>
+
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        });
+    </script>
 
 </body>
 
