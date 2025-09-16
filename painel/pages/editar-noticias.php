@@ -39,7 +39,7 @@
 				}else{
 					$imagem = $imagem_atual;
 					$slug = Painel::generateSlug($nome);
-					$arr = ['titulo'=>$nome,'categoria_id'=>$_POST['categoria_id'],'conteudo'=>$conteudo,'capa'=>$imagem,'slug'=>$slug,'id'=>$id,'nome_tabela'=>'tb_site.noticias'];
+					$arr = ['titulo'=>$nome,'categoria_id'=>$_POST['categoria_id'],'data'=>date('Y-m-d'), 'conteudo'=>$conteudo,'capa'=>$imagem,'slug'=>$slug,'id'=>$id,'nome_tabela'=>'tb_site.noticias'];
 					Painel::update($arr);
 					$noticias = Painel::select('tb_site.noticias','id = ?',array($id));
 					Painel::alert('sucesso','A notícia foi editada com sucesso!');

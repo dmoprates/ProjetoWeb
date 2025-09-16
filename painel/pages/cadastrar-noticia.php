@@ -10,6 +10,7 @@
             $titulo = $_POST['titulo'];
             $conteudo = $_POST['conteudo'];
             $capa = $_FILES['capa'];
+
             if ($titulo == '' || $conteudo == '') {
                 Painel::alert('erro', 'Campos Vázios não são permitidos!');
             } else if ($capa['tmp_name'] == '') {
@@ -23,6 +24,7 @@
                         $slug = Painel::generateSlug($titulo);
                         $arr = [
                             'categoria_id' => $categoria_id,
+                            'data' => date('Y-m-d'),
                             'titulo' => $titulo,
                             'conteudo' => $conteudo,
                             'capa' => $imagem,
@@ -33,6 +35,7 @@
                         if (Painel::insert($arr)) {
                             Painel::redirect(INCLUDE_PATH_PAINEL . 'cadastrar-noticia?sucesso');
                         }
+
                         //Painel::alert('sucesso','O cadastro da notícia foi realizado com sucesso!');
                     } else {
                         Painel::alert('erro', 'Já existe uma notícia com esse nome!');
@@ -40,7 +43,10 @@
                 } else {
                     Painel::alert('erro', 'Selecione uma imagem válida!');
                 }
+
             }
+
+
         }
         if (isset($_GET['sucesso']) && !isset($_POST['acao'])) {
             Painel::alert('sucesso', 'O cadastro foi realizado com sucesso!');

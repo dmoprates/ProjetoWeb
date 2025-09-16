@@ -1,14 +1,31 @@
+<?php
+	$url = explode('/',$_GET['url']);
+	
+
+	$verifica_categoria = MySql::conectar()->prepare("SELECT * FROM `tb_site.categorias` WHERE slug = ?");
+	$verifica_categoria->execute(array($url[1]));
+	if($verifica_categoria->rowCount() == 0){
+		Painel::redirect(INCLUDE_PATH.'noticias');
+	}
+	$categoria_info = $verifica_categoria->fetch();
+
+	$post = MySql::conectar()->prepare("SELECT * FROM `tb_site.noticias` WHERE slug = ? AND categoria_id = ?");
+	$post->execute(array($url[2],$categoria_info['id']));
+	if($post->rowCount() == 0){
+		Painel::redirect(INCLUDE_PATH.'noticias');
+	}
+
+	//É POR QUE MINHA NOTICIA EXISTE
+	$post = $post->fetch();
+
+?>
 <section class="noticia-single">
-    <div class="container">
-        <header>
-            <h1> 15/09/2025 - Título da Minha Noticia</h1>
-        </header>
-        <article>
-            <h2>Título da Minha Notícia</h2>
-            <h3>Título da Minha Noticia</h3>
-            <p>Conteúdo da minha noticia</p>
-            <p>Conteúdo da minha noticia</p>
-            <img src="<?php echo INCLUDE_PATH ?>images/bg-01.jpg" alt="">
-        </article>
-    </div><!--container-->
-</section><!--noticias-single-->
+	<div class="center">
+	<header>
+		<h1><i class="fa fa-calendar"></i> <?php echo $post['data'] ?> - <?php echo $post['titulo'] ?></h1>
+	</header>
+	<article>
+		<?php echo $post['conteudo']; ?>
+	</article>
+	</div>
+</section>
