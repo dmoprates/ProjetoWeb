@@ -62,7 +62,7 @@ if (isset($_GET['logout'])) {
                 <a <?php selecionadoMenu('adicionar-usuario'); ?> <?php verificaPermissaoMenu(2); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuário</a>
 
-                <h2>Cadastro</h2>
+                <h2>Cadastro de Conteúdo</h2>
                 <a <?php selecionadoMenu('cadastrar-depoimento'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar Depoimento</a>
                 <a <?php selecionadoMenu('cadastrar-servico'); ?>
@@ -70,7 +70,7 @@ if (isset($_GET['logout'])) {
                 <a <?php selecionadoMenu('cadastrar-slides'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-slides">Cadastrar Slides</a>
 
-                <h2>Gestão</h2>
+                <h2>Gestão de Conteúdo</h2>
                 <a <?php selecionadoMenu('listar-depoimentos'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>listar-depoimentos">Listar Depoimentos</a>
                 <a <?php selecionadoMenu('listar-servicos'); ?>
@@ -87,6 +87,13 @@ if (isset($_GET['logout'])) {
                     href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-noticia">Cadastrar Notícia</a>
                 <a <?php selecionadoMenu('gerenciar-noticias'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-noticias">Gerenciar Notícias</a>
+
+                <h2>Gestão de Clientes</h2>
+                <a <?php selecionadoMenu('cadastrar-clientes'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-clientes">Cadastrar Clientes</a>
+                <a <?php selecionadoMenu('gerenciar-clientes'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-clientes">Gerenciar Clientes</a>
+
 
                 <h2>Configuração Geral</h2>
                 <a href="<?php echo INCLUDE_PATH_PAINEL ?>editar-site">Editar Site</a>
@@ -120,6 +127,9 @@ if (isset($_GET['logout'])) {
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
     <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/main.js"></script>
     <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/jquery.mask.js"></script>
+    <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/jquery.ajaxform.js"></script>
+    <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/ajax.js"></script>
+    <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/helperMask.js"></script>
 
     <script>
         tinymce.init({

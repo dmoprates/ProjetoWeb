@@ -19,10 +19,11 @@ As adequações farão com que o sistema não seja uma cópia do apresentado no 
 * Funcionalidade de edição de usuário; (concluído: 10/09/2025)
 * Funcionalidade de adição de usuário no painel com sistema de permissão; (concluído: 11/09/2025)
 * Funcionalidade de inclusão, edição e deleção de informações no painel; (concluído: 12/09/2025)
+* Funcionalidade de gestão de clientes; (Concluído: )
 ----- Inclusão do portal de notícias junto ao Site -----
 * Funcionalidade de gestão do portal de notícias; (Concluido: 15/09/2025)
 * Front-End do portal de Notícias; (Concluído: 15/09/2025)
-* Funcionalidade de renderização dinâmica do portal com as informações do Banco de dados; (Concluído: )
+* Funcionalidade de renderização dinâmica do portal com as informações do Banco de dados; (Concluído: 16/09/2025)
 
 ### To-Do
 - Configurar funcionalidade de envio de e-mail via PHP Mailer;

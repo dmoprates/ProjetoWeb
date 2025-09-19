@@ -70,7 +70,7 @@ $cargos = [
         </div><!--form-group-->
 
         <div class="form-group">
-            <label>cargo: </label>
+            <label>Cargo: </label>
             <select name="cargo">
                 <?php
                 foreach (Painel::$cargos as $key => $value) {
