@@ -12,7 +12,7 @@ spl_autoload_register($autoload);
 
 define('INCLUDE_PATH', 'http://localhost/ProjetoWeb/');
 define('INCLUDE_PATH_PAINEL', INCLUDE_PATH . 'painel/');
-define('BASE_DIR_PAINEL', __DIR__ . 'painel/');
+define('BASE_DIR_PAINEL', __DIR__ . '/painel/');
 
 //Constantes para o painel de controle
 define('NOME_EMPRESA','Ation Dev');

@@ -22,6 +22,9 @@ if (isset($_GET['logout'])) {
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/ad7ef30e1e.js" crossorigin="anonymous"></script>
 
+    <!-- CSS DatePicker-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stefangabos/Zebra_Datepicker/dist/css/default/zebra_datepicker.min.css">
+
     <!--CSS-->
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH_PAINEL; ?>css/style.css">
 
@@ -96,6 +99,11 @@ if (isset($_GET['logout'])) {
                 <a <?php selecionadoMenu('gerenciar-clientes'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-clientes">Gerenciar Clientes</a>
 
+                <h2>Controle Financeiro</h2>
+                <a <?php selecionadoMenu('visualizar-pagamentos'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>visualizar-pagamentos">Visualizar Pagamentos</a>
+               
+
 
                 <h2>Configuração Geral</h2>
                 <a href="<?php echo INCLUDE_PATH_PAINEL ?>editar-site">Editar Site</a>
@@ -128,6 +136,8 @@ if (isset($_GET['logout'])) {
 
     <script src="<?php echo INCLUDE_PATH ?>js/jquery.js"></script>
     <?php Painel::loadJS(array('jquery-ui.min.js'), 'listar-empreendimentos'); ?>
+    <script src="https://cdn.jsdelivr.net/gh/stefangabos/Zebra_Datepicker/dist/zebra_datepicker.min.js"></script>
+    <script src="<?php echo INCLUDE_PATH_PAINEL ?>js/jquery.maskMoney.js"></script>
     <script src="<?php echo INCLUDE_PATH_PAINEL ?>js/jquery.mask.js"></script>
     <script src="<?php echo INCLUDE_PATH_PAINEL ?>js/jquery.ajaxform.js"></script>
     <script src="<?php echo INCLUDE_PATH ?>js/constants.js"></script>
@@ -145,6 +155,7 @@ if (isset($_GET['logout'])) {
     <?php Painel::loadJS(array('ajax.js'), 'gerenciar-clientes'); ?>
     <?php Painel::loadJS(array('ajax.js'), 'cadastrar-clientes'); ?>
     <?php Painel::loadJS(array('ajax.js'), 'editar-cliente'); ?>
+    <?php Painel::loadJS(array('controleFinanceiro.js'),'editar-cliente'); ?>
 
 </body>
 
