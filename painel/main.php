@@ -35,6 +35,8 @@ if (isset($_GET['logout'])) {
 
 <body>
 
+<base base="<?php echo INCLUDE_PATH_PAINEL; ?>" />
+
     <div class="menu-wraper">
         <div class="menu">
             <div class="box-usuario">
@@ -124,12 +126,12 @@ if (isset($_GET['logout'])) {
         <div class="clear"></div>
     </div><!--content-->
 
-    <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
-    <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/main.js"></script>
-    <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/jquery.mask.js"></script>
-    <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/jquery.ajaxform.js"></script>
-    <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/ajax.js"></script>
-    <script src="<?php echo INCLUDE_PATH_PAINEL; ?>js/helperMask.js"></script>
+    <script src="<?php echo INCLUDE_PATH ?>js/jquery.js"></script>
+    <?php Painel::loadJS(array('jquery-ui.min.js'), 'listar-empreendimentos'); ?>
+    <script src="<?php echo INCLUDE_PATH_PAINEL ?>js/jquery.mask.js"></script>
+    <script src="<?php echo INCLUDE_PATH_PAINEL ?>js/jquery.ajaxform.js"></script>
+    <script src="<?php echo INCLUDE_PATH ?>js/constants.js"></script>
+    <script src="<?php echo INCLUDE_PATH_PAINEL ?>js/main.js"></script>
 
     <script>
         tinymce.init({
@@ -138,6 +140,11 @@ if (isset($_GET['logout'])) {
             toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
         });
     </script>
+
+    <script src="<?php echo INCLUDE_PATH_PAINEL ?>js/helperMask.js"></script>
+    <?php Painel::loadJS(array('ajax.js'), 'gerenciar-clientes'); ?>
+    <?php Painel::loadJS(array('ajax.js'), 'cadastrar-clientes'); ?>
+    <?php Painel::loadJS(array('ajax.js'), 'editar-cliente'); ?>
 
 </body>
 

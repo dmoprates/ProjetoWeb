@@ -604,6 +604,12 @@ a.btn.order{
     padding: 10px 0;
 }
 
+.topo-box img {
+    display: block;
+    max-width: 120px;
+    margin: 0 auto;
+}
+
 .topo-box h2 {
     font-size: 36px;
 }
@@ -616,14 +622,6 @@ a.btn.order{
     color: var(--cor06);
     font-size: 15px;
     margin-bottom: 8px;
-}
-
-.group-btn {
-    padding: 0 10px;
-}
-
-.group-btn a {
-    margin-right: 15px;
 }
 
 @media screen and (max-width: 1024px){
