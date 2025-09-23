@@ -98,6 +98,7 @@ form .form-group-login:nth-of-type(2) {
     position: relative;
     top: 12px;
 }
+
 /* === PAINEL DE CONTROLE === */
 /* == GERAL == */
 .clear {
@@ -357,72 +358,80 @@ div.box-usuario {
     width: 50%;
 }
 
-@media screen and (max-width: 1024px){
-	.box-single-wraper{
-		width: 100%;
-		min-height: 0;
-	}
-	.box-metricas-single{
-		width: 100%;
-	}
+@media screen and (max-width: 1024px) {
+    .box-single-wraper {
+        width: 100%;
+        min-height: 0;
+    }
+
+    .box-metricas-single {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
-    .menu{
+    .row1,.row2{
+		width: 100%;
+	}
+
+    .menu {
         display: none;
         padding: 0;
         width: 0;
     }
 
-    .content{
-		width: 100%;
-		left: 0;
-	}
+    .content {
+        width: 100%;
+        left: 0;
+    }
 
-	header{
-		left: 0;
-		width: 100%;
-	}
+    header {
+        left: 0;
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
+    .box-imgs,
 	.box-single{
 		width: 100% !important;
 	}
-	.w50{
-		width: 100%;
-	}
-	.box-single-metrica{
-		width: 100%;
-		padding-top: 40%;
-	}
+
+    .w50 {
+        width: 100%;
+    }
+
+    .box-single-metrica {
+        width: 100%;
+        padding-top: 40%;
+    }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
 
-	.box-content{
-		padding: 8px 2%;
-	}
+    .box-content {
+        padding: 8px 2%;
+    }
 
-	.box-metricas-wraper h2{
-	font-size: 24px;
-	}
+    .box-metricas-wraper h2 {
+        font-size: 24px;
+    }
 
-	.box-metricas-wraper p{
-	padding: 10px 0;
-	font-size: 22px;
-	}
+    .box-metricas-wraper p {
+        padding: 10px 0;
+        font-size: 22px;
+    }
 
-	.menu-wraper{
-		width: 200px;
-	}
+    .menu-wraper {
+        width: 200px;
+    }
 }
 
-@media screen and (max-width: 380px){
-	.items-menu a{
-		font-size: 15px;
-	}
+@media screen and (max-width: 380px) {
+    .items-menu a {
+        font-size: 15px;
+    }
 }
 
 /* === PÁGINA EDITAR USUÁRIO === */
@@ -472,7 +481,7 @@ div.box-usuario {
     padding: 0 10px;
 }
 
-    /* = BOX DE ALERTA = */
+/* = BOX DE ALERTA = */
 .box-alert {
     width: 100%;
     padding: 8px 0;
@@ -519,6 +528,7 @@ div.box-usuario {
 .wraper-table {
     overflow-x: auto;
 }
+
 table {
     width: 100%;
     min-width: 900px;
@@ -540,7 +550,8 @@ table tr {
 }
 
 table td {
-    padding: 6px;;
+    padding: 6px;
+    ;
 }
 
 a.btn {
@@ -560,7 +571,7 @@ a.btn.delete {
     background: var(--cor09);
 }
 
-a.btn.order{
+a.btn.order {
     background: var(--cor10);
 }
 
@@ -625,8 +636,8 @@ a.btn.order{
     margin-bottom: 8px;
 }
 
-@media screen and (max-width: 1024px){
-    .box-single-wraper{
+@media screen and (max-width: 1024px) {
+    .box-single-wraper {
         width: 100%;
     }
 }
@@ -642,4 +653,95 @@ a.btn.order{
     padding: 3px 8px;
     background: var(--cor09);
     text-decoration: none;
+}
+
+/* ===== CADASTRAR PRODUTOS ===== */
+input[type=number] {
+    margin-top: 8px;
+    height: 30px;
+}
+
+/* ===== VISUALIZAR PRODUTOS ===== */
+.box-imgs img {
+    width: 100%;
+}
+
+.box-imgs img.img-square {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 8px auto;
+}
+
+.box-imgs {
+    text-align: center;
+}
+
+.box-imgs h1 {
+    color: #ccc;
+    font-size: 70px;
+    margin: 10px 0;
+}
+
+.group-btn {
+    margin-top: 15px;
+}
+
+.group-btn a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 3px 8px;
+}
+
+.busca{
+	margin: 10px 0;
+	width: 100%;
+	padding:8px 10px;
+}
+
+.busca form{
+	margin: 0;
+}
+
+.busca h4{
+	font-weight: lighter;
+	font-size: 23px;
+	color: #646464;
+}
+
+.busca-result{
+	color: #646464;
+	border-top:3px solid #ccc;
+}
+
+.busca-result p{
+	font-size: 16px;
+}
+
+.row1{
+	float: left;
+	width: 30%;
+	padding:8px 10px;
+}
+
+.row1 img{
+	width: 100%;
+}
+.row2{
+	float: left;
+	width: 70%;
+	padding:8px 10px;
+}
+
+.row2 p{
+	padding:8px 0;
+	color: #646464;
+	border-bottom: 1px solid #ccc;
+}
+
+/* ===== EDITAR PRODUTOS ===== */
+.boxes{
+	display: flex;
+	flex-wrap: wrap;
 }

@@ -102,7 +102,12 @@ if (isset($_GET['logout'])) {
                 <h2>Controle Financeiro</h2>
                 <a <?php selecionadoMenu('visualizar-pagamentos'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>visualizar-pagamentos">Visualizar Pagamentos</a>
-               
+                
+                <h2>Controle de Estoque</h2>
+                <a <?php selecionadoMenu('cadastrar-produtos'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-produtos">Cadastrar Produtos</a>
+                <a <?php selecionadoMenu('visualizar-produtos'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>visualizar-produtos">Visualizar Produtos</a>
 
 
                 <h2>Configuração Geral</h2>

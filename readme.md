@@ -21,6 +21,7 @@ As adequações farão com que o sistema não seja uma cópia do apresentado no 
 * Funcionalidade de inclusão, edição e deleção de informações no painel; (concluído: 12/09/2025)
 * Funcionalidade de gestão de clientes; (Concluído: 22/09/2025)
 * Funionalidade de gestão financeira, vinculada aos clientes; (Concluído: 22/09/2025)
+* Funcionalidade de gestão de produtos; (Concluído: 23/09/2025)
 ----- Inclusão do portal de notícias junto ao Site -----
 * Funcionalidade de gestão do portal de notícias; (Concluido: 15/09/2025)
 * Front-End do portal de Notícias; (Concluído: 15/09/2025)
