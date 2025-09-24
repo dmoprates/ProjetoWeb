@@ -35,6 +35,13 @@ As adequações farão com que o sistema não seja uma cópia do apresentado no 
 - Verificar sobre inclusão da biblioteca mPDF para gerar aquivos do template financeiro;
 - Verificar sobre disparo de e-mail dentro do portal admin;
 
+## Considerações finais
+O projeto foi concluído colocando em prática todas as propostas do curso. Realização de cadastro de itens através de PHP e Ajax, sistema para Login com permissionamento de usuários, edição dinâmica do website através do Painel, além de inclusão de funcionalidades adicionais como gestão de produtos e gestão de clientes, que neste momento não está diretamente apresentado no front-end do portal, pois trata-se uma preparação para os demais projetos do curso.
+
+O Painel será reaproveitado para outros projetos, demonstrando assim a possibilidade de reuso de código e a valorização da criação de um painel base, tendo a possibilidade de utilização do mesmo para fins comerciais.
+
+O DUMP do banco de dados está atualizado para este momento onde o projeto foi considerado como concluído. Novas funcionalidades serão incluídas nos outros módulos do projeto, porém não integradas neste painel.
+
 ## Tecnologias utilizadas:
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
 [![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](#)
