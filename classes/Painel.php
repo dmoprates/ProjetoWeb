@@ -10,14 +10,15 @@ class Painel
         '2' => 'Administrador'
     ];
 
-   public static function loadJS($files,$page){
-			$url = explode('/',@$_GET['url'])[0];
-			if($page == $url){
-				foreach ($files as $key => $value) {
-					echo '<script src="'.INCLUDE_PATH_PAINEL.'js/'.$value.'"></script>';
-				}
-			}
-		}
+    public static function loadJS($files, $page)
+    {
+        $url = explode('/', @$_GET['url'])[0];
+        if ($page == $url) {
+            foreach ($files as $key => $value) {
+                echo '<script src="' . INCLUDE_PATH_PAINEL . 'js/' . $value . '"></script>';
+            }
+        }
+    }
 
     public static function generateSlug($str)
     {
@@ -55,7 +56,20 @@ class Painel
             if (file_exists('pages/' . $url[0] . '.php')) {
                 include('pages/' . $url[0] . '.php');
             } else {
-                include('pages/home.php');
+                //Sistema de rotas!
+                if (
+                    Router::get('visualizar-empreendimento/?', function ($par) {
+                        include('views/visualizar-empreendimento.php');
+                    })
+                ) {
+                } else if (
+                    Router::post('visualizar-empreendimento/?', function ($par) {
+                        include('views/visualizar-empreendimento.php');
+                    })
+                ) {
+                } else {
+                    header('Location: ' . INCLUDE_PATH_PAINEL);
+                }
             }
         } else {
             include('pages/home.php');
@@ -110,14 +124,15 @@ class Painel
         }
     }
 
-    public static function uploadFile($file){
-			$formatoArquivo = explode('.',$file['name']);
-			$imagemNome = uniqid().'.'.$formatoArquivo[count($formatoArquivo) - 1];
-			if(move_uploaded_file($file['tmp_name'],BASE_DIR_PAINEL.'/uploads/'.$imagemNome))
-				return $imagemNome;
-			else
-				return false;
-		}
+    public static function uploadFile($file)
+    {
+        $formatoArquivo = explode('.', $file['name']);
+        $imagemNome = uniqid() . '.' . $formatoArquivo[count($formatoArquivo) - 1];
+        if (move_uploaded_file($file['tmp_name'], BASE_DIR_PAINEL . '/uploads/' . $imagemNome))
+            return $imagemNome;
+        else
+            return false;
+    }
 
     public static function deleteFile($file)
     {

@@ -1,6 +1,7 @@
 $(function(){
     $('[name=cpf]').mask('000.000.000-00');
     $('[name=cnpj]').mask('00.000.000/0000-00');
+    $('[name=preco]').maskMoney({prefix:'R$ ', allowNegative: true, thousands:'.', decimal:',', affixesStay: false});
 
     $('[name=tipo_cliente]').change(function(){
         var val = $(this).val();

@@ -22,6 +22,9 @@ if (isset($_GET['logout'])) {
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/ad7ef30e1e.js" crossorigin="anonymous"></script>
 
+    <!--jQuery UI-->
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH_PAINEL; ?>css/jquery-ui.min.css">
+
     <!-- CSS DatePicker-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stefangabos/Zebra_Datepicker/dist/css/default/zebra_datepicker.min.css">
 
@@ -109,6 +112,11 @@ if (isset($_GET['logout'])) {
                 <a <?php selecionadoMenu('visualizar-produtos'); ?>
                     href="<?php echo INCLUDE_PATH_PAINEL ?>visualizar-produtos">Visualizar Produtos</a>
 
+                <h2>Gestão de Imóveis</h2>
+                <a <?php selecionadoMenu('cadastrar-empreendimento'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-empreendimento">Cadastrar Empreendimento</a>
+                <a <?php selecionadoMenu('listar-empreendimentos'); ?>
+                    href="<?php echo INCLUDE_PATH_PAINEL ?>listar-empreendimentos">Listar Empreendimentos</a>
 
                 <h2>Configuração Geral</h2>
                 <a href="<?php echo INCLUDE_PATH_PAINEL ?>editar-site">Editar Site</a>
@@ -161,6 +169,7 @@ if (isset($_GET['logout'])) {
     <?php Painel::loadJS(array('ajax.js'), 'cadastrar-clientes'); ?>
     <?php Painel::loadJS(array('ajax.js'), 'editar-cliente'); ?>
     <?php Painel::loadJS(array('controleFinanceiro.js'),'editar-cliente'); ?>
+    <?php Painel::loadJS(array('empreendimentos.js'),'listar-empreendimentos'); ?>
 
 </body>
 

@@ -745,3 +745,14 @@ input[type=number] {
 	display: flex;
 	flex-wrap: wrap;
 }
+
+/* ===== Visualizar empreendimento ===== */
+.card-title{
+	width: 100%;
+	padding:6px;
+	color: var(--cor03);
+	margin:10px 0;
+	font-size: 17px;
+	font-weight: 300;
+	background: var(--cor13);
+}

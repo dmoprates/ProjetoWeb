@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12/09/2025 às 21:13
+-- Tempo de geração: 23/09/2025 às 20:13
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -55,7 +55,8 @@ CREATE TABLE `tb_admin.usuarios` (
 
 INSERT INTO `tb_admin.usuarios` (`id`, `user`, `password`, `img`, `nome`, `cargo`) VALUES
 (1, 'admin', 'admin', '68c2ccb3cd3e9.jpg', 'Lorem Ipsum', 2),
-(3, 'jane', '123', 'foto2.jpg', 'Jane Doe', 0);
+(3, 'jane', '123', 'foto2.jpg', 'Jane Doe', 0),
+(4, 'diego', '1234', '68d154d67fa09.jpg', 'Diego', 0);
 
 -- --------------------------------------------------------
 
@@ -68,6 +69,13 @@ CREATE TABLE `tb_admin.visitas` (
   `ip` varchar(255) NOT NULL,
   `dia` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `tb_admin.visitas`
+--
+
+INSERT INTO `tb_admin.visitas` (`id`, `ip`, `dia`) VALUES
+(17, '127.0.0.1', '2025-09-22');
 
 -- --------------------------------------------------------
 
@@ -117,7 +125,7 @@ CREATE TABLE `tb_site.depoimentos` (
 
 INSERT INTO `tb_site.depoimentos` (`id`, `nome`, `depoimento`, `data`, `order_id`) VALUES
 (1, 'Jhon Doe', 'Aliqua duis voluptate nulla enim eu dolore et sunt irure cupidatat aliqua Lorem proident ad. Occaecat velit et quis reprehenderit. Quis elit tempor do reprehenderit excepteur. Minim ad aute nulla sit nisi incididunt consequat ipsum labore. Culpa exercitation aliquip dolore non dolore voluptate fugiat enim. Reprehenderit proident id aute magna officia voluptate ea elit excepteur nostrud.', '11/09/2025', 2),
-(2, 'Jane Doe', 'Aliqua duis voluptate nulla enim eu dolore et sunt irure cupidatat aliqua Lorem proident ad. Occaecat velit et quis reprehenderit. Quis elit tempor do reprehenderit excepteur. Minim ad aute nulla sit nisi incididunt consequat ipsum labore. Culpa exercitation aliquip dolore non dolore voluptate fugiat enim. Reprehenderit proident id aute magna officia voluptate ea elit excepteur nostrud.', '12/09/2025', 1),
+(2, 'Jane Doe', '<p>Aliqua duis voluptate nulla enim eu dolore et sunt irure cupidatat aliqua Lorem proident ad. Occaecat velit et quis reprehenderit. Quis elit tempor do reprehenderit excepteur. Minim ad aute nulla sit nisi incididunt consequat ipsum labore. Culpa exercitation aliquip dolore non dolore voluptate fugiat enim. Reprehenderit proident id aute magna officia voluptate ea elit excepteur nostrud.</p>', '12/09/2025', 1),
 (3, 'Lorem Ipsum', 'Aliqua duis voluptate nulla enim eu dolore et sunt irure cupidatat aliqua Lorem proident ad. Occaecat velit et quis reprehenderit. Quis elit tempor do reprehenderit excepteur. Minim ad aute nulla sit nisi incididunt consequat ipsum labore. Culpa exercitation aliquip dolore non dolore voluptate fugiat enim. Reprehenderit proident id aute magna officia voluptate ea elit excepteur nostrud.', '10/09/2025', 3);
 
 -- --------------------------------------------------------
@@ -210,19 +218,19 @@ ALTER TABLE `tb_site.slides`
 -- AUTO_INCREMENT de tabela `tb_admin.online`
 --
 ALTER TABLE `tb_admin.online`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de tabela `tb_admin.usuarios`
 --
 ALTER TABLE `tb_admin.usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `tb_admin.visitas`
 --
 ALTER TABLE `tb_admin.visitas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de tabela `tb_site.depoimentos`
