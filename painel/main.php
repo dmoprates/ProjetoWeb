@@ -131,6 +131,9 @@ if (isset($_GET['logout'])) {
                 <i class="fa-solid fa-bars"></i>
             </div><!--menu-btn-->
             <div class="logout">
+                <a href="<?php echo INCLUDE_PATH_PAINEL ?>chat"><i class="fa-solid fa-comments"></i>
+                    Chat Online</a>
+
                 <a href="<?php echo INCLUDE_PATH_PAINEL ?>"><i class="fa-solid fa-house"></i>
                     Página Inicial</a>
 
@@ -170,6 +173,7 @@ if (isset($_GET['logout'])) {
     <?php Painel::loadJS(array('ajax.js'), 'editar-cliente'); ?>
     <?php Painel::loadJS(array('controleFinanceiro.js'),'editar-cliente'); ?>
     <?php Painel::loadJS(array('empreendimentos.js'),'listar-empreendimentos'); ?>
+    <?php Painel::loadJS(array('chat.js'),'chat'); ?>
 
 </body>
 

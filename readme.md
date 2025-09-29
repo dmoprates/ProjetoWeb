@@ -34,6 +34,7 @@ As adequações farão com que o sistema não seja uma cópia do apresentado no 
 - A busca na página de notícias não está operacional;
 - Verificar sobre inclusão da biblioteca mPDF para gerar aquivos do template financeiro;
 - Verificar sobre disparo de e-mail dentro do portal admin;
+- Verificar erro de mensagens do Chat;
 
 ## Considerações finais
 O projeto foi concluído colocando em prática todas as propostas do curso. Realização de cadastro de itens através de PHP e Ajax, sistema para Login com permissionamento de usuários, edição dinâmica do website através do Painel, além de inclusão de funcionalidades adicionais como gestão de produtos e gestão de clientes, que neste momento não está diretamente apresentado no front-end do portal, pois trata-se uma preparação para os demais projetos do curso.

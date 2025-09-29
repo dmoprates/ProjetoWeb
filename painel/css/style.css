@@ -756,3 +756,30 @@ input[type=number] {
 	font-weight: 300;
 	background: var(--cor13);
 }
+
+/* ===== CHAT ONLINE ===== */
+.box-chat-online {
+    height: 300px;
+    padding: 5px 8px;
+    overflow-y: scroll;
+    margin: 20px 0;
+    border: 1px solid var(--cor12);
+}
+
+.mensagem-chat {
+    padding: 8px 0;
+    border-bottom: 1px dotted var(--cor13);
+}
+
+.mensagem-chat span {
+    background: var(--cor07);
+    padding: 0 4px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.mensagem-chat p {
+    font-size: 15px;
+    color: var(--cor14);
+}
