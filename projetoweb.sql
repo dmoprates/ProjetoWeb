@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23/09/2025 às 20:13
+-- Tempo de geração: 03/10/2025 às 20:08
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -33,6 +33,14 @@ CREATE TABLE `tb_admin.online` (
   `ultima_acao` datetime NOT NULL,
   `token` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `tb_admin.online`
+--
+
+INSERT INTO `tb_admin.online` (`id`, `ip`, `ultima_acao`, `token`) VALUES
+(27, '127.0.0.1', '2025-10-03 13:06:36', '68dff32c523be'),
+(28, '127.0.0.1', '2025-10-03 15:06:50', '68dff494af63b');
 
 -- --------------------------------------------------------
 
@@ -75,7 +83,10 @@ CREATE TABLE `tb_admin.visitas` (
 --
 
 INSERT INTO `tb_admin.visitas` (`id`, `ip`, `dia`) VALUES
-(17, '127.0.0.1', '2025-09-22');
+(17, '127.0.0.1', '2025-09-22'),
+(18, '127.0.0.1', '2025-09-24'),
+(19, '127.0.0.1', '2025-09-24'),
+(20, '127.0.0.1', '2025-10-01');
 
 -- --------------------------------------------------------
 
@@ -218,7 +229,7 @@ ALTER TABLE `tb_site.slides`
 -- AUTO_INCREMENT de tabela `tb_admin.online`
 --
 ALTER TABLE `tb_admin.online`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT de tabela `tb_admin.usuarios`
@@ -230,7 +241,7 @@ ALTER TABLE `tb_admin.usuarios`
 -- AUTO_INCREMENT de tabela `tb_admin.visitas`
 --
 ALTER TABLE `tb_admin.visitas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de tabela `tb_site.depoimentos`
